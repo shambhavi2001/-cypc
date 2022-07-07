@@ -7,7 +7,7 @@ A subsequence of a string is a new string that is formed from the original strin
 class Solution:    
     def isSubsequence(self, s: str, t: str) -> bool:
         if not s:
-            return False
+            return True
         pointer=0
         for letter in t:
             if letter==s[pointer]:
